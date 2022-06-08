@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Sans;
+}
+
+header{
+    position: fixed;
+    background-color: lightblue;
+    background-blend-mode: lighter;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.right{
+    display: flex;
+    right: 0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.right a{
+    display: block;
+    color: black;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.title{
+    font-family: Sans;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.tagline{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.content{
+    background-color: lightcyan;
+    margin-top: 80px;
+    padding: 50px 50px;
+}
+
+.image{
+    display: none;
+    width: 500px; 
+    height: 350px;
+    text-align: center;
+}
+
+#monitor-container{
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#water-content{
+    display: flex;
+    align-items: center;
+    text-align:left;
+    border: solid;
+    border-color: #191b88;
+    border-width: 4px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#diet-content{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align:right;
+    border: solid;
+    border-color: #191b88;
+    border-width: 4px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.MonitorSubmenuButton {
+    background-color: #191b88;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.intake-container{
+    padding: 50px;
+    text-align: left;
+    justify-content: center;
+    display: none;
+
+}
+
+.intake-content{
+    border: solid;
+    background-color: lightcyan;
+    border-color: #191b88;
+    border-width: 4px;
+    border-radius: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+td{
+    width: 200px;
+}
+
+.details{
+    text-align: right;
+}
+
+input[type=submit], #add-to-consumed {
+    background-color: #191b88;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.MonitorSubmenuButton:hover, input[type=submit]:hover,  #add-to-consumed:hover{
+    background-color: #3b3ec9;
+}
+
+.form-box{
+    display: flex;
+}
+
+.consume-form-box{
+    position: relative;
+    display: inline-block;
+}
+
+.intro{
+    background-color: lightcyan;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.footer{
+    padding-top: 20px;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.name2{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.socmed{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial;
+    color: darkgreen;
+}
+
+.socmed-name1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.socmed-name2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.account{
+    margin-left: 10px;
+}
+
+.account a {
+    padding: 14px 18px;
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.contact{
+    padding-left: 50px;
+    background-color: lightblue;
+    font-weight: bolder;
+}
+
+.chat{
+    display: flex;
+    margin: 0 auto;
+}
+
+.whatsapp{
+    margin-right: 20px;
+}

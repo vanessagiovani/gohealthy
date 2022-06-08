@@ -1,0 +1,146 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Health - Water Intake</title>  
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/monitorhealth.css">
+    <link rel="stylesheet" href="../javascript/slider.js">
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+</head> 
+<body>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <a href="../html/index.html">
+                <img src="../assets/pluslogo.png" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="title">
+                GoHealthy
+            </div>
+            <div class="tagline">
+                Your Healthy Lifestyle!
+            </div>
+        </div>
+        <div class="right">
+            <a href="../html/monitorhealth.html" class="signupfirst">Monitor Health</a>
+            <a href="../html/healthdata.html" class="signupfirst">Health Data</a>
+            <a href="../html/healthconsultation.html" class="signupfirst">Health Consultation</a>
+            <a href="../html/signup.html">Sign Up</a>
+            <a href="../html/login.html">Log In</a>
+        </div>
+    </header>
+
+    <div class="content" style="background-image: url('../assets/ocean.gif'); background-size: 120%;">
+        <div class="intake-container">
+            <div class="intake-content">
+                <h1>Water Intake</h1>
+                <br/>
+                <form name="waterForm" action="" onsubmit="" method="POST">
+                    <h3>Schedule</h3>
+                    <br/>
+                    <div class = "form-box">
+                        <label for="start-hour">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start: &nbsp;
+                        </label>
+                        <input type="number" placeholder="00" name="start-hour" id="start-hour" min="0" max="23">
+                        <p>&nbsp;:&nbsp;</p>
+                        <input type="number" placeholder="00" name="start-minute" id="start-minute" min="0" max="59">
+                    </div>
+                    <br>
+                    <div class = "form-box">
+                        <label for="end-hour">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End: &nbsp;
+                        </label>
+                        <input type="number" placeholder="00" name="end-hour" id="end-hour" min="0" max="23">
+                        <p>&nbsp;:&nbsp;</p>
+                        <input type="number" placeholder="00" name="end-minute" id="end-minute" min="0" max="59">
+                    </div>
+                    <br>
+                    <h3>Amount</h3>
+                    <br>
+                    <div class = "form-box">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <input type="number" placeholder="0.00" name="amount" id="amount" min="0" max="50">
+                        <label for="amount">
+                            &nbsp; litres
+                            <p class="error" id="error-amount"></p>
+                        </label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="msg">
+                            <h3>Message</h3>
+                            <br>
+                        </label>
+                        <input type="text" placeholder="It's time to drink water!" name="msg" id="msg">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sound">
+                            <h3>Notification sound</h3>
+                        </label>
+                        <select name="sound" id="sound">
+                            <option value="1">Default notification sound</option> 
+                            <option value="2">Pristine</option> <!--https://notificationsounds.com/message-tones/pristine-609-->
+                            <option value="3">Bubbling Up</option> <!--https://notificationsounds.com/notification-sounds/bubbling-up-530-->
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Submit" id="submit" onclick="healthDataSave()"> 
+                        <script src = "../javascript/script.js"></script>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="logo2">
+                <a class="logoo" href="../html/index.html">
+                    <img src="../assets/pluslogo.png" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="name2">
+                GoHealthy
+             </div>
+            <div class="socmed">
+                <div class="socmed-name1">
+                    Instagram
+                    <div class="account">
+                       <a href="https://www.instagram.com/">@gohealthy.official</a>
+                    </div>
+                </div>
+                <div class="socmed-name2">
+                    Facebook
+                    <div class="account">
+                        <a href="https://www.facebook.com/">@letsgohealthy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="desc">
+                Contact Us:
+            </div>
+            <div class="chat">
+                <div class="whastapp">
+                    <a href="https://wa.me/087888816968">
+                        <img src="../assets/whatsapp.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <div class="gmail">
+                    <a href="mailto:gohealthy@gmail.com">
+                        <img src="../assets/email.png" width="30px" height="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

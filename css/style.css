@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Sans;
+}
+
+header{
+    position: fixed;
+    background-color: lightblue;
+    background-blend-mode: lighter;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.right{
+    display: flex;
+    right: 0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.right a{
+    display: block;
+    color: black;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.title{
+    font-family: Sans;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.tagline{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.content{
+    background-color: lightcyan;
+    margin-top: 80px;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display: none;
+    width: 500px; 
+    height: 350px;
+    text-align: center;
+}
+
+
+#slider{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sliderContent{
+    overflow: hidden;
+    justify-content:end;
+    display:flex;
+    height: 474px;
+    width: 618px;
+}
+
+.sliderImages {
+    height: 474px;
+    transition: 1s ease-in-out;
+    left: 0;
+    position: relative;
+}
+
+#nextSliderButton, #prevSliderButton {
+    cursor:pointer;
+    height:150px;
+    width:150px;
+    position:absolute;
+    padding: 20px;
+    z-index: 1;
+    font-size: 72px;
+    background-color: lightblue;
+}
+
+#nextSliderButton{
+    right:5%;
+}
+
+#prevSliderButton{
+    left: 5%;
+}
+
+.intro{
+    background-color: lightcyan;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.footer{
+    padding-top: 20px;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.name2{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.socmed{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial;
+    color: darkgreen;
+}
+
+.socmed-name1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.socmed-name2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.account{
+    margin-left: 10px;
+}
+
+.account a {
+    padding: 14px 18px;
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.contact{
+    padding-left: 50px;
+    background-color: lightblue;
+    font-weight: bolder;
+}
+
+.chat{
+    display: flex;
+    margin: 0 auto;
+}
+
+.whatsapp{
+    margin-right: 20px;
+}

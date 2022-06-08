@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Health - Diet</title>  
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/monitorhealth.css">
+    <link rel="stylesheet" href="../html/suggestion.html">
+    <link rel="stylesheet" href="../javascript/script.js">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   
+</head> 
+<body>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <a href="../html/index.html">
+                <img src="../assets/pluslogo.png" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="title">
+                GoHealthy
+            </div>
+            <div class="tagline">
+                Your Healthy Lifestyle!
+            </div>
+        </div>
+        <div class="right">
+            <a href="../html/monitorhealth.html" class="signupfirst">Monitor Health</a>
+            <a href="../html/healthdata.html" class="signupfirst">Health Data</a>
+            <a href="../html/healthconsultation.html" class="signupfirst">Health Consultation</a>
+            <a href="../html/signup.html">Sign Up</a>
+            <a href="../html/login.html">Log In</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="intake-container">
+            <div class="intake-content">
+                <h1>Diet</h1>
+                <br/>
+                <form name="dietForm" action="suggestion.html" onsubmit="" method="POST">
+                    <div class = "consume-form-box">
+                        <label for="consume">What have you consumed today?
+                        </label>
+                        <br>
+                        <input list="consume">
+                        <datalist id="consume">
+                        <option value="White Rice">
+                        <option value="Red Rice">
+                        <option value="Black Rice">
+                        <option value="Nasi Goreng">
+                        <option value="Nasi Padang">
+                        <option value="Nasi Uduk">
+                        <option value="Potato">
+                        <option value="Corn">
+                        <option value="Bread">
+                        <option value="Spinach">
+                        <option value="Carrot">
+                        <option value="Tomato">
+                        <option value="Cucumber">
+                        <option value="Eggplant">
+                        <option value="Egg">
+                        <option value="Tofu">
+                        <option value="Tempe">
+                        <option value="Steam chicken">
+                        <option value="Fried chicken">
+                        <option value="Grilled chicken">
+                        <option value="Steam fish">
+                        <option value="Fried fish">
+                        <option value="Grilled fish">
+                        <option value="Beef">
+                        <option value="Pork">
+                        <option value="Vegetable soup">
+                        <option value="Seaweed soup">
+                        <option value="Sayur asem">
+                        <option value="Miso soup">
+                        <option value="Corn soup">
+                        <option value="Cream soup">
+                        <option value="Soto">
+                        <option value="Milk">
+                        <option value="Soda">
+                        <option value="Chocolate cake">
+                        <option value="Cheesecake">
+                        <option value="Boba tea">
+                        <option value="Ice cream">
+                        <option value="Coffee">
+                        <option value="Tea">
+                        </datalist>
+                    </div>
+                    <br>
+                    <br>
+                    <div class = "consume-form-box">
+                        <label for="amount">
+                            Portion
+                        </label>
+                        <br>
+                        <select name="portion" id="portion">
+                            <option value="1">Less than half a portion</option> 
+                            <option value="2">Very small (0.5x)</option> 
+                            <option value="3">Small (0.75x)</option>
+                            <option value="4">Normal (1)</option> 
+                            <option value="5">Large (1.5x)</option> 
+                            <option value="6">Extra Large (2x)</option>
+                            <option value="7">More than double</option> 
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <button id="add-to-consumed" onclick="addConsume()">Add to today's history</button>
+                        <script src = "../javascript/script.js"></script>
+                    </div>
+                    <br>
+                    <div>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Submit" id="submit" onclick="healthDataSave()"> 
+                        <script src = "../javascript/script.js"></script>
+
+                        <a href= "../html/suggestion.html">
+                            <input type="submit" value="Check" id="submit">
+                        </a>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="logo2">
+                <a class="logoo" href="../html/index.html">
+                    <img src="../assets/pluslogo.png" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="name2">
+                GoHealthy
+             </div>
+            <div class="socmed">
+                <div class="socmed-name1">
+                    Instagram
+                    <div class="account">
+                       <a href="https://www.instagram.com/">@gohealthy.official</a>
+                    </div>
+                </div>
+                <div class="socmed-name2">
+                    Facebook
+                    <div class="account">
+                        <a href="https://www.facebook.com/">@letsgohealthy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="desc">
+                Contact Us:
+            </div>
+            <div class="chat">
+                <div class="whastapp">
+                    <a href="https://wa.me/087888816968">
+                        <img src="../assets/whatsapp.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <div class="gmail">
+                    <a href="mailto:gohealthy@gmail.com">
+                        <img src="../assets/email.png" width="30px" height="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
